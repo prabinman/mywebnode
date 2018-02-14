@@ -6,11 +6,25 @@ body {
 .navbar {
     border-bottom: #008ed6 3px solid;
     opacity: 0.8;
+    min-height: 60px;
+}
+.navbar-brand {
+    /* background: rgba(255, 255, 255, 0.8); */
+    /* color: black; */
+    padding: 0px 5px;
+    height: 60px;
+    line-height: 60px;
+    justify-content: center;
+}
+
+#about-us {
+    padding-top: 200px;
 }
 
 #home-section {
-    background: url("../public/images/IMG_7647.JPG") no-repeat;
+    background: url("../images/IMG_7647.JPG") no-repeat;
     min-height: 700px;
+    padding-top: 80px;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -31,17 +45,17 @@ body {
 }
 
 .button {
-    /* background: coral; */
+    background: coral;
     padding: 1em 2em;
     color: #fff;
     border: 0;
-}
-
+} 
+ 
 .button:hover{
     background: #333;
 }
 
-.modal {
+/* .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -51,9 +65,9 @@ body {
     width: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
-.modal-content{
+/* .modal-content{
     background-color: #f4f4f4;
     margin: 20% auto;
     padding: 20px;
@@ -61,30 +75,31 @@ body {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
     animation-duration: 1s;
-}
+} */
 
-.modal-header h2, .modal-footer h3 {
+/* .modal-header h2, .modal-footer h3 {
     margin: 0;
     clear: both;
     text-align: justify;
-}
+} */
 
-.modal-header{
+/* .modal-header{
     background: palegoldenrod;
     padding: 15px;
     color: #fff;
-}
+} */
 
 .modal-body{
-    padding: 10px 20px;
+    padding: 10px 10px;
+    text-align: justify;
 }
 
-.modal-footer{
+/* .modal-footer{
     background: coral;
     padding: 10px;
     color: #fff;
     text-align: center;
-}
+} */
 
 .closeBtn{
     color: #ccc;
@@ -103,7 +118,7 @@ body {
     to{ opacity: 1}
 }
 
-#home-section .home-inner .first-letter {
+/* #home-section .home-inner .first-letter {
     font-size: 200%;
     color: red;
 }
@@ -122,8 +137,8 @@ body {
 
 #home-section .fa :hover {
     clear: both;
-}
-#about-us-section .fa,
+} */
+/* #about-us-section .fa,
 #mission-vision-section .fa {
     background: rgba(255, 255, 255, 0.7);
     color: black;
@@ -137,9 +152,9 @@ body {
     background-attachment: fixed;
     z-index: -1;
     opacity: 0.4;
-}
+} */
 
-#recruitment-process h1, p {
+/* #recruitment-process h1, p {
     background: rgba(0, 0, 0, 0.75);
     color: white;
     padding: 4px 8px;
@@ -158,17 +173,20 @@ body {
     background-attachment: scroll;
     z-index: -1;
     opacity: 0.7;
-}
+} */
 
-#mission-vision .text, .fa {
+/* #mission-vision .text, .fa {
     background: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 4px 8px;
-}
+} */
 
 #slider .h1{
     color: slateblue;
+    width: 100%;
     text-indent: 30%;
+    clear: both;
+    justify-content: center;
     text-decoration: none;
 }
 
@@ -178,29 +196,29 @@ body {
     justify-content: space-between;
 }
 
-.process-title {
+/* .process-title {
 
     text-align: center;
     text-transform: uppercase;
-}
+} */
 
 #main-footer {
     padding-top: 50px;
+    clear: both;
 }
 
 #main-footer .footer-text {
-    /* color: white; */
-    font-size: 120%;
+    color: white;
+     font-size: 120%; 
     font-family: Muli;
 }
 
 #bottom-footer .col-md-12 {
     height: 25px;
     top: 10px;
-
     text-align: center;
 }
-
+/* 
 #bottom-footer .fa:hover {
     color: lightskyblue;
 }
@@ -220,10 +238,10 @@ body {
     width: 16%;
     justify-content: space-around;
     /* width: fit-content; */
-    position: relative;
+    /* position: relative;
     text-align: center;
-}
-
+}  */
+/* 
 .progressbar li:before {
     content: counter(step);
     counter-increment: step;
@@ -276,8 +294,8 @@ body {
 .progressbar li:nth-child(-n+6)::after {
     background-color: red;
     
-}
-
+} */
+/* 
 
 @media(max-width: 576px) {
     body {
@@ -316,7 +334,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-}
+} 
 
 .slick-list:focus {
     outline: none;
