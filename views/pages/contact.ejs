@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/public/contact-style.css">
+<% include ../partials/head %>
 <body>
     
     <% include ../partials/navbar %>
 
     <div class="form-style-10">
-        <h1>Sign Up Now!
-            <span>Sign up and tell us what you think of the site!</span>
+        <h1>Contact us!
+            <span>Your information will be kept confidential and never be shared with anyone.</span>
         </h1>
         <form action="">
             <div class="section">
                 <span>1</span>First Name &amp; Address</div>
             <div class="inner-wrap">
                 <label for="">Your Full Name
-                    <input type="text" name="field1" />
+                    <input type="text" name="field1" required/>
                 </label>
                 <label for="">Address
                     <textarea name="field2" id="" cols="30" rows="10"></textarea>
@@ -26,25 +26,15 @@
                 <span>2</span>Email &amp; Phone</div>
             <div class="inner-class">
                 <label for="">Email Address
-                    <input type="email" name="field3" />
+                    <input type="email" name="field3" required/>
                 </label>
                 <label for="">Phone Number
-                    <input type="text" name="field4" />
+                    <input type="text" name="field4" required/>
                 </label>
             </div>
 
-            <div class="section">
-                <span>3</span>Passwords</div>
-            <div class="inner-wrap">
-                <label for="">Password
-                    <input type="password" name="field5" />
-                </label>
-                <label for="">Confirm Password
-                    <input type="password" name="field6" />
-                </label>
-            </div>
             <div class="button-section">
-                <input type="submit" name="Sign Up" />
+                <input type="submit" name="Send" />
                 <span class="privacy-policy">
                     <input type="checkbox" name="field7">You agree to our Terms and Policy.
                 </span>
