@@ -4,7 +4,6 @@ var path = require('path');
 
 var app = express();
 
-
 // set the view engine to ejs
 app.use(express.static(__dirname + '/public/'));
 app.set('view engine', 'ejs');
@@ -19,6 +18,11 @@ app.get('/', function(req, res) {
 // about page
 app.get('/about', function(req, res) {
     res.render('pages/about');
+});
+
+// awards page
+app.get('/awards', function(req, res) {
+    res.render('pages/awards');
 });
 
 // testimonials page
