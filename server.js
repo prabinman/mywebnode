@@ -5,11 +5,11 @@ var path = require('path');
 var app = express();
 
 // set the view engine to ejs
-app.use(express.static(__dirname + '/public/'));
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public/'));
 
 // use res.render to load up an ejsview file
-
 // index page
 app.get('/', function(req, res) {
     res.render('pages/index');

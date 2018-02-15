@@ -118,11 +118,6 @@ body {
     to{ opacity: 1}
 }
 
-#home-section .home-inner .first-letter {
-    /* font-size: 200%; */
-    /* color: red; */
-}
-
 #home-section .card-form {
     opacity: 0.8;
 }
@@ -152,7 +147,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 #recruitment-process h1, p {
@@ -264,7 +259,7 @@ body {
     height: 1px;
     background-color: #ddd;
     top: 30px;
-    left: -50%;
+    left: -6%;
     z-index: -1;
 }
 
@@ -273,27 +268,27 @@ body {
 }
 
 .progressbar li.active {
-    color: green;
+    color: darkred;
 }
 
 .progressbar li.active:before {
-    border-color: green;
+    border-color: darkred;
 }
 
 .progressbar li.active + li::after {
-    background-color: green;
+    background-color: darkred;
 }
 
 .progressbar li:nth-child(-n+6) {
-    color: green;
+    color:  darkred;
 }
 
 .progressbar li:nth-child(-n+6).active:before {
-    border-color: green;
+    border-color: darkred;
 }
 
 .progressbar li:nth-child(-n+6)::after {
-    background-color: green;
+    background-color: darkred;
     
 }
 
