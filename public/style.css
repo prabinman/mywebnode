@@ -17,6 +17,26 @@ body {
     justify-content: center;
 }
 
+.linear-wipe {
+    text-align: center;
+
+    background: linear-gradient(to right,
+    #FFF 20%, #008ed6 40%, #008ed6 60%, #FFF 80%);
+    background-size: 200% auto;
+
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 1s linear infinite;
+    @keyframes shine {
+        to {
+            background-position: 200% center;
+        }
+    }
+}
+
 #about-us {
     padding-top: 200px;
 }
