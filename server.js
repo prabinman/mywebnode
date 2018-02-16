@@ -34,6 +34,11 @@ app.get('/testimonials', function(req, res) {
     res.render('pages/testimonials');
 });
 
+// testimonials page
+app.get('/currentjob', function(req, res) {
+    res.render('pages/currentjob');
+});
+
 // contact page
 app.get('/contact', function(req, res) {
     res.render('pages/contact');

@@ -8,6 +8,7 @@ body {
     opacity: 0.8;
     min-height: 60px;
 }
+
 .navbar-brand {
     /* background: rgba(255, 255, 255, 0.8); */
     /* color: black; */
@@ -17,23 +18,27 @@ body {
     justify-content: center;
 }
 
+.jumbotron .rounded-circle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .linear-wipe {
     text-align: center;
-
-    background: linear-gradient(to right,
-    #FFF 20%, #008ed6 40%, #008ed6 60%, #FFF 80%);
+    background: linear-gradient(to right, #FFF 20%, #008ed6 40%, #008ed6 60%, #FFF 80%);
     background-size: 200% auto;
-
     color: #000;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+}
 
-    animation: shine 1s linear infinite;
-    @keyframes shine {
-        to {
-            background-position: 200% center;
-        }
+@keyframes shine {
+    to {
+        background-position: 200% center;
     }
 }
 
@@ -69,9 +74,9 @@ body {
     padding: 1em 2em;
     color: #fff;
     border: 0;
-} 
- 
-.button:hover{
+}
+
+.button:hover {
     background: #333;
 }
 
@@ -109,7 +114,7 @@ body {
     color: #fff;
 } */
 
-.modal-body{
+.modal-body {
     padding: 10px 10px;
     text-align: justify;
 }
@@ -121,28 +126,36 @@ body {
     text-align: center;
 } */
 
-.closeBtn{
+.closeBtn {
     color: #ccc;
     float: right;
     font-size: 30px;
 }
 
-.closeBtn:hover, .closeBtn:focus{
+.closeBtn:hover,
+.closeBtn:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-@keyframes modalopen{
-    from{ opacity: 0}
-    to{ opacity: 1}
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 #home-section .card-form {
     opacity: 0.8;
 }
 
-#home-section, #about-us, #testimonials, #contact .fa {
+#home-section,
+#about-us,
+#testimonials,
+#contact .fa {
     color: #008ed6;
     background: #fff;
     padding: 4px;
@@ -170,7 +183,8 @@ body {
     opacity: 0.8;
 }
 
-#recruitment-process h1, p {
+#recruitment-process h1,
+p {
     background: rgba(255, 255, 255, 0.6);
     color: black;
     padding: 4px 8px;
@@ -191,13 +205,14 @@ body {
     opacity: 0.7;
 }
 
-#mission-vision .text, .fa {
+#mission-vision .text,
+.fa {
     background: rgba(255, 255, 255, 0.8);
     color: black;
     padding: 4px 8px;
 }
 
-#slider .h1{
+#slider .h1 {
     color: slateblue;
     width: 100%;
     text-indent: 30%;
@@ -256,7 +271,7 @@ body {
     /* width: fit-content; */
     position: relative;
     text-align: center;
-} 
+}
 
 .progressbar li:before {
     content: counter(step);
@@ -295,12 +310,12 @@ body {
     border-color: darkred;
 }
 
-.progressbar li.active + li::after {
+.progressbar li.active+li::after {
     background-color: darkred;
 }
 
 .progressbar li:nth-child(-n+6) {
-    color:  darkred;
+    color: darkred;
 }
 
 .progressbar li:nth-child(-n+6).active:before {
@@ -309,14 +324,12 @@ body {
 
 .progressbar li:nth-child(-n+6)::after {
     background-color: darkred;
-    
 }
-
 
 @media(max-width: 576px) {
     body {
         width: 100%;
-          }
+    }
 }
 
 /* Slider */
@@ -350,7 +363,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-} 
+}
 
 .slick-list:focus {
     outline: none;
@@ -433,28 +446,28 @@ body {
 }
 
 /* Style for Contact Form */
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<style type="text/css">
 
-.form-style-10{
-    width:450px;
-    padding:30px;
-    margin:40px auto;
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'><style type="text/css">.form-style-10 {
+    width: 450px;
+    padding: 30px;
+    margin: 40px auto;
     background: #FFF;
     border-radius: 10px;
-    -webkit-border-radius:10px;
+    -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
-.form-style-10 .inner-wrap{
+
+.form-style-10 .inner-wrap {
     padding: 30px;
     background: #F8F8F8;
     border-radius: 6px;
     margin-bottom: 15px;
 }
-.form-style-10 h1{
+
+.form-style-10 h1 {
     background: #2A88AD;
     padding: 20px 30px 15px 30px;
     margin: -30px -30px 30px -30px;
@@ -469,17 +482,20 @@ body {
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     border: 1px solid #257C9E;
 }
-.form-style-10 h1 > span{
+
+.form-style-10 h1>span {
     display: block;
     margin-top: 2px;
     font: 13px Arial, Helvetica, sans-serif;
 }
-.form-style-10 label{
+
+.form-style-10 label {
     display: block;
     font: 13px Arial, Helvetica, sans-serif;
     color: #888;
     margin-bottom: 15px;
 }
+
 .form-style-10 input[type="text"],
 .form-style-10 input[type="date"],
 .form-style-10 input[type="datetime"],
@@ -498,19 +514,20 @@ body {
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     border: 2px solid #fff;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-.form-style-10 .section{
+.form-style-10 .section {
     font: normal 20px 'Bitter', serif;
     color: #2A88AD;
     margin-bottom: 5px;
 }
+
 .form-style-10 .section span {
     background: #2A88AD;
     padding: 5px 10px 5px 10px;
@@ -524,8 +541,9 @@ body {
     color: #fff;
     margin-top: -3px;
 }
+
 .form-style-10 input[type="button"],
-.form-style-10 input[type="submit"]{
+.form-style-10 input[type="submit"] {
     background: #2A88AD;
     padding: 8px 20px 8px 20px;
     border-radius: 5px;
@@ -540,14 +558,16 @@ body {
     border: 1px solid #257C9E;
     font-size: 15px;
 }
+
 .form-style-10 input[type="button"]:hover,
-.form-style-10 input[type="submit"]:hover{
+.form-style-10 input[type="submit"]:hover {
     background: #2A6881;
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 }
-.form-style-10 .privacy-policy{
+
+.form-style-10 .privacy-policy {
     float: right;
     width: 250px;
     font: 12px Arial, Helvetica, sans-serif;
@@ -555,4 +575,5 @@ body {
     margin-top: 10px;
     text-align: right;
 }
+
 </style>

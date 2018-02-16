@@ -2,12 +2,14 @@
 
 ☐ Modify CSS of Home page footer section to display text size and color as in rest other pages.
 
-☐ Try to implement animation to the motto text in home page.
+✔ Try to implement animation to the motto text in home page. @done(18-02-16 13:42)
 
-☐ Align the top padding of awards page to display lightbox image gallery properly.
+✔ Align the top padding of awards page to display lightbox image gallery properly. @done(18-02-16 14:20)
 
 ☐ Modal of image gallery not responsive, edit it for making it responsive and also slider button not displaying and working. Work it out.
 
 ☐ Prepare current jobs page and link it to the site.
 
-☐ Implement backend code to make send button function.
+☐ Implement backend code to make send button function. Add feature to upload cv in contact form.
+
+☐ Implement testimonial carousel from both associates and workers.
