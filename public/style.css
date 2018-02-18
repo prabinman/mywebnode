@@ -485,7 +485,10 @@ p {
 
 /* Style for Contact Form */
 
-<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'><style type="text/css">.form-style-10 {
+<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+.form-style-10 {
     width: 450px;
     padding: 30px;
     margin: 40px auto;
