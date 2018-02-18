@@ -1,26 +1,67 @@
 <!-- RECRUITMENT-PROCESS SECTION -->
 <section id="recruitment-process" class="overflow-hidden">
-        <div class="container">
-            <div class="process-title">
-                <h1 class="text-center">Recruitment Process</h1>
-            </div>
-            <div class="row">
-                <p>"The recruitment process of MIS is some of most competitive and innovative. Once there is staffing demand
-                    from our clients, we go through below orderly process."</p>
+    <div class="container">
+        <div class="process-title">
+            <h1 class="text-center">Recruitment Process</h1>
+        </div>
+        <div class="row">
+            <p>"The recruitment process of MIS is some of most competitive and innovative. Once there is staffing demand from
+                our clients, we go through below orderly process."</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="bottom-btn" class="col-md-12">
+                <button type="button" class="btn btn-info" onclick="showMore()">Read More</button>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="progressbar">
-                        <li class="active">Demand Received</li>
-                        <li>Short listing</li>
-                        <li>Selection</li>
-                        <li>Documentation</li>
-                        <li>Skill up-gradation</li>
-                        <li>Dispatch</li>
-                    </ul>
-                </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="progressbar">
+                    <li class="active">Demand Received</li>
+                    <li>Short listing</li>
+                    <li>Selection</li>
+                    <li>Documentation</li>
+                    <li>Skill up-gradation</li>
+                    <li>Dispatch</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- <div id="recruitment-msg">
+        <div class="container">
+            <div class="row">
+                <p>
+                    Demand received Once demand is received from clients, a team is assigned to look after the demand type and analyze the kind
+                    and quality of candidates required.
+                    <br> Short listing Through advertising, networks and database, we accumulate the list of candidates for our
+                    clients. A team of professionals goes through their eligibility test and only those who pass the test
+                    would call for interview and further processes.
+                    <br> Selection After short listing of potential selectees, our clients are invited for interview selection
+                    of their preferred workforce. We want accurate tests so that only those candidates who meet requirements
+                    are selected on their merit basis.
+                    <br> Documentation Once a candidate is selected, the documentation process starts thereby timely placement
+                    to selected working field. We do all documentation work-in-house.
+                    <br> Skill up-gradation All the candidates selected by our clients may or may not have previous overseas
+                    work experience on that field. So, we conduct a skill up-gradation training program before they leave
+                    for it. Through vocational trainings, knowledge and attitude build-up courses, we make them ready for
+                    work.
+                    <br> Dispatch After successful skill up-gradation training we send them into the work field.
+                </p>
+            </div>
+        </div>
+    </div> -->
+</section>
+<script>
+    function showMore() {
+        var msg = document.getElementById("recruitment-msg");
+        if (msg.style.display === "none") {
+            msg.style.display = "block";
+        } else {
+            msg.style.display = "none";
+        }
+    }
+</script>

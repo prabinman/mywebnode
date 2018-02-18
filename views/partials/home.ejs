@@ -6,8 +6,7 @@
                 <div class="row">
                     <div class="col-lg-12 d-none d-lg-block">
                         <h1 class="text-primary text-center">
-                            <span class="linear-wipe">Our motto is 
-                                "Local
+                            <span class="linear-wipe">Our motto is "Local
                                 <strong> Skill</strong> Global
                                 <strong>Exposure."</strong>
                             </span>
@@ -18,36 +17,56 @@
                 <!-- row -->
 
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#welcomeModal">Welcome Message</button>
+                    <button type="button" class="btn btn-info" onclick="showMessage()">Welcome Message</button>
                 </div>
                 <!-- col-md-6 -->
                 <!-- Welcome Message -->
-                <div id="welcomeModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <!-- <h3 class="text-primary text-center">Welcome Message</h3> -->
-                            </div>
-                            <!--modal-header -->
-                            <div class="modal-body">
-                                <div class="row">
-                                    <p>Manaslu International Services is one of the renowned foreign employment recruitment
-                                        company of Nepal. Manaslu International Services is registered under the Ministry
-                                        of Labour, Government of Nepal. It supplies human resources to different countries
-                                        of the world that are legally permitted by the Government of Nepal for foreign employment.
-                                        Manaslu International Services believe on honest, hard-working, experienced workforce.
-                                        We have gained trust and goodwill from our valued clients. Manaslu International
-                                        Services provides the perfect blend of quality human resource and client satisfaction.
-                                    </p>
+                <div id="welcomeMessage">
+                    <div class="container">
+                        <div class="row">
+                            <p>Manaslu International Services is one of the renowned foreign employment recruitment company
+                                of Nepal. Manaslu International Services is registered under the Ministry of Labour, Government
+                                of Nepal. It supplies human resources to different countries of the world that are legally
+                                permitted by the Government of Nepal for foreign employment. Manaslu International Services
+                                believe on honest, hard-working, experienced workforce. We have gained trust and goodwill
+                                from our valued clients. Manaslu International Services provides the perfect blend of quality
+                                human resource and client satisfaction.
+                            <br>
+                                MIS is a registered company approved by Ministry of Labor, Govt. of Nepal under the license no. 151/056/057. This registration
+                                allows us to meet the manpower need of our clients by offering some of best talents from
+                                Nepal. We have a glorious history of recruiting thousands of management professionals, technical
+                                and non-technical personnel, skilled, semi-skilled and unskilled workers. We value our clients
+                                for trusting us with reputed business opportunities.
+                            <br>
+                                We are a specialized team of qualified, experienced and professional personnel. Through much strategic and inventive recruitment
+                                processes, we discover great ones from among best candidates and timely deploy them into
+                                right job by identifying their right abilities. Leveraging on huge industry network, we dare
+                                to meet staffing need within short time frame.
+                            
+                            <br>
+                            
+                                At MIS, we use all necessary ideologies and infrastructures to find best workforce from global talent pool. We believe actions
+                                speak louder than words. And, we are committed on our responsibility.
+                            </p>
 
-                                </div>
-                                <!-- row -->
-                            </div>
+                            <!-- </div> -->
+                            <!-- row -->
+                            <!-- </div> -->
                             <!-- modal-body -->
                         </div>
-                        <!-- modal-content -->
+                        <!-- row -->
                     </div>
-                    <!-- modal-dialog -->
+                    <!-- container -->
                 </div>
-                <!-- end .welcomeModal -->
+                <!-- end .welcomeMessage -->
+
+                <script>
+                    function showMessage() {
+                        var msg = document.getElementById("welcomeMessage");
+                        if (msg.style.display === "none") {
+                            msg.style.display = "block";
+                        } else {
+                            msg.style.display = "none";
+                        }
+                    }
+                </script>
