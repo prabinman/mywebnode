@@ -271,7 +271,9 @@ p {
 } */
 
 #main-footer {
-    padding-top: 50px;
+    padding-top: 5px;
+    border-top: #333 2px solid;
+    border-bottom: #333 2px solid;
     clear: both;
 }
 
@@ -281,10 +283,28 @@ p {
     font-family: Muli;
 }
 
+.left-part{
+    text-align: left;
+    vertical-align: middle;
+    border: 1px dashed rgba(0, 0, 0, 0.12);
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.right-part{
+    text-align: right;
+    vertical-align: middle;
+
+}
+
 #bottom-footer .col-md-12 {
-    height: 25px;
-    top: 30px;
+    /* height: 25px;
+    top: 30px; */
+    margin-top: 10px;
+    margin-bottom: 5px;
     text-align: center;
+    vertical-align: middle;
     bottom: 0;
 }
 
@@ -293,8 +313,10 @@ p {
 }
 
 .map-section1 {
-    border: 1px solid grey;
-    clear: both;
+    /* border: 1px solid grey; */
+    text-align: right;
+    padding-left: 40px;
+    /* clear: both; */
 }
 
 .progressbar {
